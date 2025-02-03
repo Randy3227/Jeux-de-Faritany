@@ -12,18 +12,18 @@ import GOP.*;
 public class Frame extends JFrame {
     Terrain field = new Terrain(1000, new Player[] {
             new Player("Randy", Color.RED),
-            new Player("Fanilo", Color.BLUE)
+            new Player("CPU", Color.BLUE)
     });
 
     public Frame() {
         super("Game of Point");
         setSize(1920, 1000);
-        setResizable(false);
+        setResizable(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().add(field);
         pack();
         setJMenuBar(field.getMenuBar());
-        setVisible(false);
+        setVisible(true);
     }
 
 
